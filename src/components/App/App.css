@@ -1,0 +1,36 @@
+:root {
+  --color-scrollBg: #222222;
+  --color-scroll: #3199dc;
+  --color-light: #f8f9fa;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-scrollBg);
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  scrollbar-color: var(--color-scroll) var(--color-scrollBg);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scroll);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-scrollBg);
+}
